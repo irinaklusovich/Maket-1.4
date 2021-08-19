@@ -26,28 +26,10 @@
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
 
-.nav {
+.aside__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-
-.nav-icon {
-    width: 40px;
-    height: 40px;
-    background: #FF3E79 no-repeat 50% 50%;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: opacity .4s,  transform .8s;
-    }
-
-.nav-icon:hover {
-    opacity:1;
-    background-color:#E139FF;
-    transform: rotate(7deg) scale(1.1);
 }
 .nav-container {
     display:flex;
@@ -58,12 +40,30 @@
     flex-basis: 320px;
     margin-bottom: 10px;
 }
-.nav-icon--close{
+
+.nav_icon {
+    width: 40px;
+    height: 40px;
+    background: #FF3E79 no-repeat 50% 50%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity .4s,  transform .8s;
+    }
+
+.nav_icon:hover, .footer__button:hover {
+    opacity:1;
+    background-color:#E139FF;
+    transform: rotate(7deg) scale(1.1);
+}
+
+.nav_icon--close{
     background-image:url("src/image/close.svg");
     margin-left: 15px;
     }
 
-.nav-icon--search{
+.nav_icon--search{
     background-image:url("src/image/icon.svg");
     margin-left: 65px;
     margin-right: 15px;
@@ -139,20 +139,29 @@ color: #7E7E82;
     flex-direction: row;
     margin-top: 268px;
 }
-
-.nav-icon--call {
+.footer__button{
+    width: 40px;
+    height: 40px;
+    background: #FF3E79 no-repeat 50% 50%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity .4s,  transform .8s;
+}
+.footer__button--call {
     background-image: url("src/image/call.svg");
     margin: 0 16px 0 24px;
 }
 
 
-.nav-icon--chat {
+.footer__button--chat {
     background-image: url("src/image/chat.svg");
     margin-right: 16px;
 }
 
 
-.nav-icon--profile {
+.footer__button--profile {
     background-image: url("src/image/profile.svg");
 }
 
@@ -160,7 +169,7 @@ color: #7E7E82;
     display: flex;
     flex-direction: column;
 }
-.contacts-mail{
+.footer__contacts-mail{
     font-family: TTLakes-Medium, SansSerif, serif;
     color:#1B1C21;
     margin-top: 16px;
@@ -168,7 +177,7 @@ color: #7E7E82;
     font-size: 16px;
 
 }
-.contacts-tel{
+.footer__contacts-tel{
     font-family: TTLakes-Medium, SansSerif, serif;
     font-size: 24px;
     font-weight: bold;
