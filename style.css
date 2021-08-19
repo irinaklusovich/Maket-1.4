@@ -24,6 +24,7 @@
 .aside{
     width:320px;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+
 }
 
 .aside__nav {
@@ -39,7 +40,7 @@
     width: 320px;
     height: 80px;
     flex-basis: 320px;
-    margin-bottom: 10px;
+    margin-bottom:0px;
 }
 
 .nav_icon {
@@ -76,20 +77,14 @@
     flex-direction: column;
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    list-style: none;
 
-}
 
-.list__item{
-    margin-top: 10%;
+.aside__item{
+    margin-top: 5%;
     position: relative;
 }
 
-.list__item:hover::before {
+.aside__item:hover::before {
     content: '';
     width: 2px;
     height: 30px;
@@ -99,7 +94,7 @@
     margin-right: -4px;
 }
 
-.list__link{
+.aside__link{
     text-decoration: none;
     font-family: TTLakes-Medium, SansSerif, serif;
     font-size: 16px;
@@ -109,15 +104,15 @@
     margin-left: 24px;
 }
 
-.list__link:hover{
+.aside__link:hover{
 color: #7E7E82;
 }
 
-.list__link:focus{
+.aside__link:focus{
     color: #7E7E82;
     }
 
-.list__link:focus:before{
+.aside__link:focus:before{
     content: '';
     width: 2px;
     height: 23px;
@@ -133,7 +128,7 @@ color: #7E7E82;
 .footer__buttons{
     display: flex;
     flex-direction: row;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .footer__button{
     width: 40px;
@@ -172,6 +167,7 @@ color: #7E7E82;
     margin-top: 16px;
     margin-left:24px;
     font-size: 16px;
+    text-decoration: none;
 }
 
 .footer__contacts-tel{
@@ -180,12 +176,14 @@ color: #7E7E82;
     font-weight: bold;
     margin-top: 12px;
     margin-left: 24px;
+    text-decoration: none;
+    color:#1B1C21;
 }
 
 .footer__button-lang{
     display: flex;
-    margin-top: 40px;
-    padding-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom: 12px;
 }
 
 .footer__button-ru{
@@ -196,8 +194,7 @@ color: #7E7E82;
     color: #1B1C21;
     margin-left: 24px;
     cursor: pointer;
-    transition: transform .8s;
-}
+    transition: transform .8s;}
 
 .footer__button-en{
     font-family: TTLakes-Medium, SansSerif, serif;
@@ -228,3 +225,10 @@ color: #7E7E82;
     border-color:#ECEDF1;
     border-radius: 2px;
    }
+.footer__button-ru:focus,.footer__button-en:focus, .footer__button-ch:focus {
+    opacity:1;
+    background-color:#ECEDF1;
+    transform: scale(1.2);
+    border-color:#ECEDF1;
+    border-radius: 2px;
+}
