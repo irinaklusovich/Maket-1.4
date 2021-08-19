@@ -38,10 +38,7 @@
     height: 40px;
     background: #FF3E79 no-repeat 50% 50%;
     border-radius: 50%;
-    display: flex;
     border: none;
-    justify-content: center;
-    align-items: center;
     outline: none;
     cursor: pointer;
     transition: opacity .4s,  transform .8s;
