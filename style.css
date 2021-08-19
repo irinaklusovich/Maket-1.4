@@ -31,6 +31,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .nav-container {
     display:flex;
     justify-content: space-around;
@@ -69,13 +70,13 @@
     margin-right: 15px;
 }
 
-.aside__list_services{
+.aside__list{
     width: 320px;
     display: flex;
     flex-direction: column;
 }
 
-.services{
+.list{
     display: flex;
     flex-direction: column;
     white-space: nowrap;
@@ -83,13 +84,12 @@
 
 }
 
-.services__item{
+.list__item{
     margin-top: 10%;
     position: relative;
-
 }
 
-.services__item:hover::before {
+.list__item:hover::before {
     content: '';
     width: 2px;
     height: 30px;
@@ -97,12 +97,9 @@
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     margin-right: -4px;
-
 }
 
-
-
-.services__link{
+.list__link{
     text-decoration: none;
     font-family: TTLakes-Medium, SansSerif, serif;
     font-size: 16px;
@@ -110,16 +107,17 @@
     color: #1B1C21;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin-left: 24px;
-
 }
-.services__link:hover{
+
+.list__link:hover{
 color: #7E7E82;
-
 }
-.services__link:focus{
+
+.list__link:focus{
     color: #7E7E82;
     }
-.services__link:focus:before{
+
+.list__link:focus:before{
     content: '';
     width: 2px;
     height: 23px;
@@ -132,12 +130,10 @@ color: #7E7E82;
     top:0;
     }
 
-
-
 .footer__buttons{
     display: flex;
     flex-direction: row;
-    margin-top: 268px;
+    margin-top: 15%;
 }
 .footer__button{
     width: 40px;
@@ -169,14 +165,15 @@ color: #7E7E82;
     display: flex;
     flex-direction: column;
 }
+
 .footer__contacts-mail{
     font-family: TTLakes-Medium, SansSerif, serif;
     color:#1B1C21;
     margin-top: 16px;
     margin-left:24px;
     font-size: 16px;
-
 }
+
 .footer__contacts-tel{
     font-family: TTLakes-Medium, SansSerif, serif;
     font-size: 24px;
@@ -184,12 +181,12 @@ color: #7E7E82;
     margin-top: 12px;
     margin-left: 24px;
 }
+
 .footer__button-lang{
     display: flex;
     margin-top: 40px;
     padding-bottom: 30px;
 }
-
 
 .footer__button-ru{
     font-family: TTLakes-Medium, SansSerif, serif;
@@ -200,7 +197,6 @@ color: #7E7E82;
     margin-left: 24px;
     cursor: pointer;
     transition: transform .8s;
-
 }
 
 .footer__button-en{
